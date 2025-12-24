@@ -1,0 +1,32 @@
+name: Check Docs Only
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check changed files
+        run: |
+          # Get list of changed files in the PR
+          files=$(git diff --name-only origin/main...HEAD)
+          echo "Changed files:"
+          echo "$files"
+
+          # Filter out files in docs/
+          non_docs_files=$(echo "$files" | grep -v '^docs/' || true)
+
+          if [ -n "$non_docs_files" ]; then
+            echo "Error: PR modifies files outside docs/:"
+            echo "$non_docs_files"
+            exit 1
+          else
+            echo "All changed files are in docs/, check passed!"
+          fi
