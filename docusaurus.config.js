@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Wiki',
+  title: 'BDLS ENSEA',
   tagline: 'Dinosaurs are aight',
   favicon: 'img/favicon.ico',
 
@@ -28,7 +28,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ziyehia', // Usually your GitHub org/user name.
-  projectName: 'wiki', // Usually your repo name.
+  projectName: 'bdls-ensea-site', // Usually your repo name.
 
   trailingSlash: false,  // optional but recommended for GitHub Pages
   deploymentBranch: 'gh-pages',
@@ -54,7 +54,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ziyehia/wiki/tree/main/docs/',
+            'https://github.com/ziyehia/bdls/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -65,7 +65,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ziyehia/wiki/tree/main/blog/',
+            'https://github.com/ziyehia/bdls/tree/main/blog/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
