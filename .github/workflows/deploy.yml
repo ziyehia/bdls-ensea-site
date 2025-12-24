@@ -1,6 +1,5 @@
 name: Deploy to GitHub Pages
 
-# Trigger when a PR targeting main is merged (i.e., push to main)
 on:
   push:
     branches:
