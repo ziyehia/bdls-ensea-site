@@ -87,9 +87,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Acceuil',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Logo BDLS',
           src: 'img/BDLS_Simple.svg',
         },
         items: [
@@ -99,7 +99,7 @@ const config = {
             position: 'left',
             label: 'Pôles et événements',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+         // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -136,12 +136,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Cagnottes helloasso',
+                href: 'https://www.helloasso.com/associations/bureau-de-la-solidarite-de-l-ensea',
               },
             ],
           },
