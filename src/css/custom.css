@@ -6,25 +6,37 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary Maroon: #8D0004 */
+  --ifm-color-primary: #8D0004;
+  --ifm-color-primary-dark: #7f0004;
+  --ifm-color-primary-darker: #780003;
+  --ifm-color-primary-darkest: #630003;
+  --ifm-color-primary-light: #9b1a1d;
+  --ifm-color-primary-lighter: #a22629;
+  --ifm-color-primary-lightest: #b84d4f;
+
+  /* Secondary Gold: #FCBA1C */
+  --ifm-color-secondary: #FCBA1C;
+  
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Using a subtle maroon tint for line highlights */
+  --docusaurus-highlighted-code-line-bg: rgba(141, 0, 4, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* A lightened version of your maroon for better legibility on dark backgrounds */
+  --ifm-color-primary: #af2b2e;
+  --ifm-color-primary-dark: #9e2729;
+  --ifm-color-primary-darker: #952527;
+  --ifm-color-primary-darkest: #7b1e20;
+  --ifm-color-primary-light: #c03639;
+  --ifm-color-primary-lighter: #c64043;
+  --ifm-color-primary-lightest: #d45f62;
+
+  /* The gold remains vibrant on dark backgrounds */
+  --ifm-color-secondary: #FCBA1C;
+  
+  /* Adjusted highlight for dark mode */
+  --docusaurus-highlighted-code-line-bg: rgba(252, 186, 28, 0.15);
 }
