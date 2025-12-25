@@ -11,8 +11,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'BDLS ENSEA',
-  tagline: 'Dinosaurs are aight',
-  favicon: 'img/favicon.ico',
+  tagline: "Bureau de la Solidarité de l'École Nationale supérieure de l'Électronique et de ses Applications",
+  favicon: 'img/BDLS_Simple.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -54,7 +54,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ziyehia/bdls/tree/main/docs/',
+            'https://github.com/ziyehia/bdls-ensea-site/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -65,7 +65,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ziyehia/bdls/tree/main/blog/',
+            'https://github.com/ziyehia/bdls-ensea-site/tree/main/blog/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -90,14 +90,14 @@ const config = {
         title: 'My Site',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/BDLS_Simple.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Pôles et événements',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -114,25 +114,21 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Pôles et événements',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Réseaux sociaux',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/bdls-ensea/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/bdls.ensea/',
               },
             ],
           },
@@ -150,7 +146,6 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
