@@ -42,26 +42,26 @@
 }
 
 /* Hum'ENSEA Section - Switched colors: primary #344CA1, secondary #79C0ED */
-.doc-section-humensea {
-  --ifm-color-primary: #344CA1;
-  --ifm-color-primary-dark: #2d418a;
-  --ifm-color-primary-darker: #293a7a;
-  --ifm-color-primary-darkest: #1f2a5c;
-  --ifm-color-primary-light: #4a5fb5;
-  --ifm-color-primary-lighter: #556ac1;
-  --ifm-color-primary-lightest: #7a8dd4;
+html.doc-section-humensea {
+  --ifm-color-primary: #344CA1 !important;
+  --ifm-color-primary-dark: #2d418a !important;
+  --ifm-color-primary-darker: #293a7a !important;
+  --ifm-color-primary-darkest: #1f2a5c !important;
+  --ifm-color-primary-light: #4a5fb5 !important;
+  --ifm-color-primary-lighter: #556ac1 !important;
+  --ifm-color-primary-lightest: #7a8dd4 !important;
   
-  --ifm-color-secondary: #79C0ED;
-  --docusaurus-highlighted-code-line-bg: rgba(52, 76, 161, 0.1);
+  --ifm-color-secondary: #79C0ED !important;
+  --docusaurus-highlighted-code-line-bg: rgba(52, 76, 161, 0.1) !important;
 }
 
-[data-theme='dark'] .doc-section-humensea {
-  --ifm-color-primary: #5a7ec8;
-  --ifm-color-primary-dark: #4d6db5;
-  --ifm-color-primary-darker: #465fa1;
-  --ifm-color-primary-darkest: #3a4a82;
-  --ifm-color-primary-light: #7a96d8;
-  --ifm-color-primary-lighter: #8ba3e0;
-  --ifm-color-secondary: #79C0ED;
-  --docusaurus-highlighted-code-line-bg: rgba(121, 192, 237, 0.15);
+html[data-theme='dark'].doc-section-humensea {
+  --ifm-color-primary: #5a7ec8 !important;
+  --ifm-color-primary-dark: #4d6db5 !important;
+  --ifm-color-primary-darker: #465fa1 !important;
+  --ifm-color-primary-darkest: #3a4a82 !important;
+  --ifm-color-primary-light: #7a96d8 !important;
+  --ifm-color-primary-lighter: #8ba3e0 !important;
+  --ifm-color-secondary: #79C0ED !important;
+  --docusaurus-highlighted-code-line-bg: rgba(121, 192, 237, 0.15) !important;
 }

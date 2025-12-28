@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Solidaire',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/solidarite.svg').default,
     description: (
       <>
         à décrire.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Humanitaire',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/humanitaire.svg').default,
     description: (
       <>
         à décrire.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Culturelle',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/culturelle.svg').default,
     description: (
       <>
         à décrire.

@@ -53,9 +53,9 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
+          /*editUrl:
             'https://github.com/ziyehia/bdls-ensea-site/tree/main/docs/',
-        },
+        }*/,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -64,8 +64,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ziyehia/bdls-ensea-site/tree/main/blog/',
+          /*editUrl:
+            'https://github.com/ziyehia/bdls-ensea-site/tree/main/blog/',*/
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -90,10 +90,11 @@ const config = {
       },
       navbar: {
         title: 'Acceuil',
+        /*
         logo: {
           alt: 'Logo BDLS',
           src: 'img/BDLS_Simple.svg',
-        },
+        }, */
         items: [
           {
             type: 'docSidebar',
@@ -102,11 +103,12 @@ const config = {
             label: 'Pôles et événements',
           },
          // {to: '/blog', label: 'Blog', position: 'left'},
+         /*
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
         ],
       },
       footer: {

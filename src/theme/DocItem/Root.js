@@ -1,19 +1,21 @@
 import React from 'react';
-import { useDoc } from '@docusaurus/plugin-content-docs/client';
+import { useLocation } from '@docusaurus/router';
 import DocItemRoot from '@theme-original/DocItem/Root';
 
 export default function DocItemRootWrapper(props) {
-  const { metadata } = useDoc();
+  const location = useLocation();
   
-  // Extract section from the doc path
-  // e.g., /docs/hum-ensea/presentation -> 'hum-ensea'
-  const pathParts = metadata.unversionedId?.split('/') || [];
-  const section = pathParts[0] || '';
+  // Extract section from the URL path
+  // e.g., /bdls-ensea-site/docs/Hum'ENSEA/Présentation -> 'hum-ensea'
+  const pathMatch = location.pathname.match(/\/docs\/([^/]+)/);
+  let section = '';
   
-  // Log for debugging
-  if (typeof window !== 'undefined') {
-    console.log('Doc path:', metadata.unversionedId);
-    console.log('Section:', section);
+  if (pathMatch) {
+    // Convert to lowercase and replace apostrophes with nothing, spaces/capitals with nothing
+    section = pathMatch[1]
+      .toLowerCase()           // hum'ensea
+      .replace(/'/g, '')       // humensea
+      .replace(/\s+/g, '-');   // handle spaces if any
   }
   
   return (
